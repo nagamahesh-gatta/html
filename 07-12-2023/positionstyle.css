@@ -1,0 +1,44 @@
+
+.parent{
+    width: 25em;
+    height: 25em;
+    border: 2px solid red;
+    position:relative;
+    
+}
+/* .child1,.child2,.child3{
+    width: 6.25em;
+    height: 6.25em;
+}
+.child1{
+    background-color: red;
+    position: relative;
+    left:6.25em;
+    top:6.25em;
+}
+.child2{
+    background-color: green;
+}
+.child3{
+    background-color: blue;
+    position: relative;
+    left:12.50em;
+    bottom:6.25em;
+} */
+
+.child1,.child2,.child3{
+    width: 6.25em;
+    height: 6.25em;
+}
+.child1{
+    background-color: red;
+}
+.child2{
+    background-color: green;
+}
+.child3{
+    background-color: blue;
+    position: absolute;
+    top: 0px;
+    right:0px;
+}

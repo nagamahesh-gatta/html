@@ -1,0 +1,28 @@
+h1{
+    color:blueviolet;
+    text-align: center;
+}
+
+table{
+    width: 800px;
+    text-align: center;
+    background-color: khaki;
+    color: red;
+    margin:auto;
+    
+}
+table:hover{
+    box-shadow: 3px 3px 3px red;
+}
+table,th,tr,td{
+
+    border: 2px solid lightgray;
+    border-collapse: collapse;
+    padding: 20px;
+    
+}
+
+th{
+    background-color: blueviolet;
+    color:white;
+}

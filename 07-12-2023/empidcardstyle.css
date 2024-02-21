@@ -1,0 +1,15 @@
+.profile{
+    text-align: center;
+    width: 18.75em;
+    height: 18.75em;
+    margin:auto;
+    margin-top: 100px;
+    box-shadow: -4px -4px;
+}
+
+.profile .profilepic{
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+
+}

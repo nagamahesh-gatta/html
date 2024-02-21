@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1> Image Demo:</h1>
+    <img src="img/img3.jpeg" alt="Tech Image" width="500px">
+    <h1>Element Levels:</h1>
+    <p>we can easly findout block or inline element very using development tool.</p>
+    <ul>
+        <li style="list-style: none;">
+            <h2>Block Level</h2>
+        </li>
+        <p>
+            When cursor placed or inspect on particular element. If it's occupy entire row it's called block level
+            element. Element
+            start with new line.
+        </p>
+        <h3>Exmaples of Block Element:</h3>
+        <ul>
+
+            <li>Headings</li>
+            <li>Paragraphs</li>
+            <li>Lists</li>
+        </ul>
+
+        <li style="list-style: none;">
+            <h2>InLine Level</h2>
+            <p>
+                When cursor placed or inspect on particular element. If the element not occupy entire width of the page.
+                That element is called "Inline Element".
+            </p>
+            <h3>Exmaples of Inline Element:</h3>
+            <ul>
+                <li>Image</li>
+            </ul>
+        </li>
+    </ul>
+    <h2>Styling Elements</h2>
+    <h4 style="text-indent: 30px;">CSS - Cascading Style Sheet Language:</h4>
+    <p style="text-indent: 70px;">The selector should be element name, id, class-name. </p>
+    <h2> CSS Rule </h2>
+    <h4>
+        <pre>
+            selector{
+
+                property : value;
+                property : value;
+                ................
+            }
+
+            h1{
+                color: red;
+                font-size: 20px;
+            }
+
+            h2{
+                color: rgb(100, 10, 50);
+
+            }
+            h3{
+                color: #ffa700;
+            }
+        </pre>
+    </h4>
+    <p> There are <strong>three</strong> types of colors.</p>
+    <ul>
+        <li>Named Colors</li>
+        <li>RGB colors</li>
+        <li>Hexdecimal Colors </li>
+    </ul>
+    <h4> Reference Websites for best color codes:</h4>
+    <li><a href="https://www.color-hex.com" target="_blank">color-hex</a></li>
+
+    <pre>
+            rgb(RED, GREEN, BLUE      [/ ALPHA])
+                
+                Number: 0-255            Number: 0 - 1
+                    OR                       OR
+                PERCENTAGE: 0%-100%      Percentage: 0%-100%
+        </pre>
+
+
+
+    <pre>
+            #RRGGBB[AA]
+
+            Hexadecimal Value: 00-FF
+        </pre>
+
+    <h4><u style="border: 0px 0px 2px 0px; border-bottom: dashed; text-decoration: none;">Text Style:</u></h4>
+    <ul style="list-style: none;">
+        <li>color</li>
+        <li>font-size</li>
+        <li>font-family</li>
+        <li>font-weight</li>
+        <li>text-transform</li>
+        <li>text-decoration</li>
+        <li>text-shadow
+            <pre>
+                x-axis  y-axis   blur color
+            </pre>
+        </li>
+        <li>text-align
+            <ul>
+                <li>left</li>
+                <li>center</li>
+                <li>right</li>
+            </ul>
+        </li>
+        <li>line-height</li>
+        <li>letter-spacing</li>
+        <li>word-spacing</li>
+        <li>text-indent</li>
+    </ul>
+    <h4>
+        <u style="border: 0px 0px 2px 0px; border-bottom: dashed; text-decoration: none;">
+            Border Styles
+        </u>
+    </h4>
+    <ul style="list-style: none;">
+        <li>border</li>
+        <pre> Width type color</pre>
+        <li>border-top</li>
+        <li>border-left</li>
+        <li>border-right</li>
+        <li>border-bottom</li>
+        <br><br>
+        <li>border-radius</li>
+        <li>border-top-right-radius</li>
+        <li>border-top-left-radius</li>
+        <li>border-bottom-left-radius</li>
+        <li>border-bottom-right-radius</li>
+
+    </ul>
+    <h4>
+        <u style="border: 0px 0px 2px 0px; border-bottom: dashed; text-decoration: none;">
+            list Styles
+        </u>
+    </h4>
+    <ul style="list-style: none;">
+        <li>list-style-type</li>
+        <pre>
+            disc
+            circle
+            decimal
+            square
+            upper-roman
+        </pre>
+
+        <li>list-style-image:url("")</li>
+        <li>text-align</li>
+        <li>list-style-position</li>
+    </ul>
+
+    <h4>
+        <u style="border: 0px 0px 2px 0px; border-bottom: dashed; text-decoration: none;">
+            Image Styles
+        </u>
+    </h4>
+    <ul style="list-style: none;">
+        <p> By Default image in the left side. To move the image left, right and center. For that purpose we gone use
+            the property called <strong>float</strong></p>
+        <pre>
+        img{
+            float: left (or) right (or) center;
+        }
+       </pre>
+        <p> To move image in center we are using the following techinque.</p>
+        <pre>
+        img{
+            display: block;
+            margin: auto;
+            border-radius: 50px;
+            box-shadow: 5px 5px 5px darkgray;  
+        }
+       </pre>
+    </ul>
+    <h4>
+        <u style="border: 0px 0px 2px 0px; border-bottom: dashed; text-decoration: none;">
+            Adding CSS to HTML
+        </u>
+    </h4>
+    <ul style="list-style: none;">
+        <li>Internal CSS</li>
+        <li>External CSS</li>
+        <li>Inline CSS</li>
+    </ul>
+    <h4>
+        <u style="border: 0px 0px 2px 0px; border-bottom: dashed; text-decoration: none;">
+            Selector as id, class, .....
+        </u>
+    </h4>
+    <pre>
+        selector(tag name/id/class){
+            property: value;
+            ...............
+        }
+    </pre>
+    <h4>
+        <u style="border: 0px 0px 2px 0px; border-bottom: dashed; text-decoration: none;">
+            Different Sytles for same type of elements:
+        </u>
+    </h4>
+
+    <ul style="list-style: none;">
+        <li>id</li>
+        <pre>
+            1.html
+            
+            styles.css
+            #first{
+
+            }
+            .second{
+
+            }
+
+        </pre>
+    </ul>
+    <h4>
+        <u style="border: 0px 0px 2px 0px; border-bottom: dashed; text-decoration: none;">
+            Box Model:
+        </u>
+    </h4>
+    <ul style="list-style: none;">
+        <li>margin:auto</li>
+        <pre>
+            margin
+
+                one value(all side)
+                two values(top&bottom left&right)
+                three values(top right&left bottom)
+                four values(top right bottom left)
+                auto (horizontally center)
+        </pre>
+        <li>margin-top</li>
+        <li>margin-bottom</li>
+        <li>margin-left</li>
+        <li>margin-right</li>
+        <br>
+        <li>padding</li>
+        <li>padding-top</li>
+        <li>padding-bottom</li>
+        <li>padding-left</li>
+        <li>padding-rigth</li>
+    </ul>
+    <h4>
+        <u style="border: 0px 0px 2px 0px; border-bottom: dashed; text-decoration: none;">
+            CSS background:
+        </u>
+    </h4>
+    <ul>
+        <li>background-color</li>
+        <li>background-image</li>
+        <li>background-repeat</li>
+        <pre>
+                repeat-x
+                repeat-y
+                no-repeat
+            </pre>
+        <li>background-size</li>
+        <pre>
+                auto        (to calculate the size automatically)
+                cover       (cover entire container)
+                contain(show whole image)
+                one-value(width)
+                two-value(width&height)
+            </pre>
+        <li>background-position</li>
+        <pre>
+                top 
+                bottom
+                center
+                left 
+                right 
+            </pre>
+        <li>background-attachment</li>
+        <pre>
+                scroll
+                fixed
+            </pre>
+    </ul>
+    <h4>
+        <u style="border: 0px 0px 2px 0px; border-bottom: dashed; text-decoration: none;">
+            Element levels & Changing level property
+        </u>
+    </h4>
+    <ul style="list-style: none;">
+        <li>Block-level (entire-row)</li>
+        <li>Inline (only required space)</li>
+
+    </ul>
+    <ul style="list-style: none;">
+        <li>heading (block level)</li>
+        <li>paragraph (block level)</li>
+        <li>list (block level)</li>
+        <li>Img (inline level)</li>
+    </ul>
+    <h4>
+        <u style="border: 0px 0px 2px 0px; border-bottom: dashed; text-decoration: none;">
+            Comments in HTML in CSSk
+        </u>
+
+    </h4>
+    <pre>
+        HTML <!-- Comments in HTML-->
+        CSS /* Comments */
+    </pre>
+    <h4>
+        <u style="border: 0px 0px 2px 0px; border-bottom: dashed; text-decoration: none;">
+            Div & span
+        </u>
+
+    </h4>
+    <pre>
+        div -- to group of Elements (block level)
+        span -- display of span is inline.
+    </pre>
+    <h4>
+        <u style="border: 0px 0px 2px 0px; border-bottom: dashed; text-decoration: none;">
+            Hyper Links
+        </u>
+    </h4>
+    <pre>
+        <a href = "path of the other resources"> Content</a>
+        Text 
+        Image 
+    </pre>
+    <p>Hyper links contains many states</p>
+    <h4>
+        <u style="border: 0px 0px 2px 0px; border-bottom: dashed; text-decoration: none;">
+            Styling Hyperlinks
+        </u>
+    </h4>
+    <pre>
+        psuedo classes
+        a {}                    (normal link)
+        a:link{}                (Unvisited link)
+        a:visited{}             (visited link)
+        a:hover{}               (when mouse moved over it)
+        a:active{}              (when being cliked)
+        a:focus{}               (after selection)
+
+        order should followed or else it's not working as we expect
+    </pre>
+    <h4>
+        <u style="border: 0px 0px 2px 0px; border-bottom: dashed; text-decoration: none;">
+            Tables
+        </u>
+    </h4>
+    <pre>
+        Table 
+            Thead 
+                th 
+            Tbody 
+                tr
+                td
+    </pre>
+    <h4>
+        <u style="border: 0px 0px 2px 0px; border-bottom: dashed; text-decoration: none;">
+            Advanced Tables(with Rowspan & colspan)
+        </u>
+    </h4>
+    <h4>
+        <u style="border: 0px 0px 2px 0px; border-bottom: dashed; text-decoration: none;">
+            video, audio & iframe elements
+        </u>
+    </h4>
+        <pre>
+            <h2>Video File</h2>
+            <video src="../videos/samplevideo.mp4" controls poster="img/img1.jpeg" style="margin: auto;display: block;"></video>
+
+            <h2>Audio File</h2>
+            <audio src="../images/music.flac" controls style="margin: auto;display: block;"></audio>
+
+        </pre>
+        <p>iframe stands for inline frame.It's used embed. Embed means placing content called embed</p>
+
+        <iframe width="679" height="400" src="https://www.youtube.com/embed/qT7dpDpkxsU?list=RDqT7dpDpkxsU" frameborder="0" allowfullscreen target="_blank"></iframe>
+    
+        <h4>
+            <u style="border: 0px 0px 2px 0px; border-bottom: dashed; text-decoration: none;">
+                CSS Flexbox Layout:
+            </u>
+        </h4>
+        <p>The structure of the page is called layout. It's efficient way to layout, align and distribute the space. If we want to create a flexbox we require parent element and it should contain childreans. So we can align this childreans. The terminology we are using here parent we called as <span style="font-weight: bold; color: red;">Parent</span> and childreans called as <span style="font-weight: bold; color: red;">Items</span>.</p>
+
+        <p> The access towards x-axis called <span style="font-weight: bold; color: red;">Main-access</span> towards to the y-axis called as <span style="font-weight: bold; color: red;">cross-axis</span>. If we are not take display property as flex its not considered as flex layout. The default flex direction is row</p>
+        <pre>
+            create flex container
+            display: flex
+
+            change flex direction
+                flex-direction: row/row-reverse/col/col-reverse
+
+            Apply wrap
+                flex-wrap: wrap/nowrap/wrap-reverse
+            
+            Change ability of flex item to grow
+                flex-grow: number
+            
+            Adjust gap:
+                gap : value
+            
+            Horizontal alignment
+                justify-content
+                    flex-start
+                    flex-end 
+                    center 
+                    space-between 
+                    space-around 
+                    space-evenly 
+
+            Vertical alignment
+
+                align-items
+
+                    flex-start
+                    flex-end
+                    center
+                    strech
+                    baseline
+
+
+            Aling individual itmes
+
+                align-self
+        </pre>
+        <h4>
+            <u style="border: 0px 0px 2px 0px; border-bottom: dashed; text-decoration: none;">
+                CSS Units
+            </u>
+        </h4>
+        <pre>
+            Absolute Units:
+                we should not use absolute units to design responsive webpage. Those are 
+
+                cm 
+                mm
+                in 
+                px 
+                pt 
+                pc
+            
+            Relative units: 
+                em (equal to font-size of parent element)
+                rem (equal to font-size of root element)
+                vw (1% of view port width)
+                vh (1% of view port height)
+                % (Relative to parent  element)
+                
+        </pre>
+        <h4>
+            <u style="border: 0px 0px 2px 0px; border-bottom: dashed; text-decoration: none;">
+                Sizing Properties
+            </u>
+        </h4>
+        
+        <pre>
+            width 
+            height 
+
+            min-width
+            min-height
+
+            max-width 
+            max-height
+        </pre>
+        <h4>
+            <u style="border: 0px 0px 2px 0px; border-bottom: dashed; text-decoration: none;">
+                Using google fonts & fontawesome icons
+            </u>
+            
+        </h4>
+        <p>Reference to the fontawesome icons:</p>
+        <a href="https://www.fontawesome.com" target="_blank">font-awesome</a>
+        <p> click on start for free. click on explore the icons link. pick the which icon is required. how to use the icons means we use cdn links. go to the goole enter font awesome icons cdn</p>
+        <a href="https://cdnjs.com/libraries/font-awesome" target="_blank">font-awesome-cdn</a>
+        <pre>
+            Example:
+                <h1><i class="fa-solid fa-atom"></i></h1>
+        </pre>
+        <h4>
+            <u style="border: 0px 0px 2px 0px; border-bottom: dashed; text-decoration: none;">
+               Style for child elements
+            </u>
+            
+        </h4>
+        <pre>
+            child Combinator:
+
+                selector1 > selector2 {
+
+                    styleproperites
+                }
+            
+            Descendant Combinator
+                
+                selector1 selector2{
+
+                }
+
+        </pre>
+        <h4>
+            <u style="border: 0px 0px 2px 0px; border-bottom: dashed; text-decoration: none;">
+               CSS Position
+            </u>
+            
+        </h4>
+        <p>
+            Placing an element in desired location. Default position of every element is static. 
+
+        </p>
+        <ul style="list-style: none;">
+            <li>static -  default location</li>
+            <li>Relative - relative to it's natuaral position</li>
+            <li>absolute - relative to it's positioned ancestor(parent)/ body(removed from doc flow)</li>
+            <li>fixed - cann't move from the natural position - position: fixed; bottom:0px;</li>
+            <li>sticky - can move upto specified position. once it's reached position it stick over there.</li>
+        </ul>
+
+</body>
+
+</html
